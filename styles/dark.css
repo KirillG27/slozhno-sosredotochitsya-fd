@@ -5,8 +5,81 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-image: url('../images/cover-image-dark.png');
+  --bg-color: rgba(0, 0, 40, 1);
+  --accent-color: rgba(255, 0, 112, 1);
+  --main-color: rgba(0, 0, 40, 1);
+  --title-color: rgba(219, 0, 255, 1);
+  --decorate-color: rgba(255, 0, 112, 1);
+  --main-title-color: rgba(255, 0, 112, 1);
+  --description-color: rgba(241, 178, 206, 1);
+  --focus-color: rgba(255, 0, 112, 0.4);
+}
+
+:root.theme-dark .header__decorative-element {
+  display: block;
+  position: absolute;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  line-height: 1.25;
+  top: 10px;
+  right: 38px;
+}
+
+:root.theme-dark .header__decorative-element::after {
+  content: "";
+  position: absolute;
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: currentColor;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 43px;
+  box-shadow: 0 0 5px 2px var(--accent-color);
+}
+
+.header__decorative-element {
+  display: block;
+  position: absolute;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  line-height: 1.25;
+  top: 10px;
+  right: 38px;
+}
+
+.header__decorative-element::after {
+  content: "";
+  position: absolute;
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: currentColor;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 43px;
+  box-shadow: 0 0 5px 2px var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  :root.theme-dark .header__decorative-element {
+    top: 20px;
+    right: 50px;
+  }
+  
+  :root.theme-dark .header__decorative-element::after {
+    left: 44px;
+    top: 12px;
+  }
+
+  .header__decorative-element {
+    top: 20px;
+    right: 50px;
+  }
+  
+  .header__decorative-element::after {
+    left: 44px;
+    top: 12px;
+  }
 }
