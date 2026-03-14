@@ -6,7 +6,7 @@
 
 :root.theme-light {
   --bg-image: url('../images/cover-image-light.png');
-  --bg-color: rgba(237, 185, 228, 1);;
+  --bg-color: rgba(237, 185, 228, 1);
   --accent-color: rgba(255, 141, 203, 1);
   --main-color: rgba(53, 52, 48, 1);
   --title-color: rgba(255, 194, 230, 1);
@@ -23,7 +23,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url('../images/cover-image-light.png');
-    --bg-color: rgba(237, 185, 228, 1);;
+    --bg-color: rgba(237, 185, 228, 1);
     --accent-color: rgba(255, 141, 203, 1);
     --main-color: rgba(53, 52, 48, 1);
     --title-color: rgba(255, 194, 230, 1);
